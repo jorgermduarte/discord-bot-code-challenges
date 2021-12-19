@@ -5,6 +5,6 @@ triggerClient.LoadTrigger(
     'message',
     {
         channelID : configurations.channels.code_challange,
-        message : 'test automatic trigger load'
+        message : ``
     }
 )
