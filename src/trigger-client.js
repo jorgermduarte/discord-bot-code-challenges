@@ -9,7 +9,9 @@ const triggerClient = {
         bot.initialize()
         bot.getClient().on('ready',async function(client){
             let event = await triggers[trigger](bot.getClient(),args)
-            triggerClient.CloseConnection()
+            setTimeout(() => {
+                triggerClient.CloseConnection()
+            },configurations.trigger_timeout)
         })
     },
     CloseConnection : () => {
