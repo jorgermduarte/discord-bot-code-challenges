@@ -1,4 +1,4 @@
+const bot = require('./src/bot');
 
-const bot = require('./src/bot')
-bot.initialize()
-bot.setEvents()
+bot.initialize();
+bot.setEvents();

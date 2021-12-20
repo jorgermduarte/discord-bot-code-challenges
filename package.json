@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint:check": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore .",
     "prettier:check": "prettier --check \"src/**/*.js\" ",
     "prettier:fix": "prettier --write \"src/**/*.js\" --fix",
     "prepare": "husky install"
@@ -24,6 +26,10 @@
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "prettier": "2.5.1"
   }

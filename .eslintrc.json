@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "prettier",
+        "eslint:recommended",
+        "google"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 13
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "import/prefer-default-export": 0,
+        "jsx-a11y/anchor-is-valid": 0,
+        "newline-after-var": 1,
+        "newline-before-return": 2,
+        "no-use-before-define": "off",
+        "indent": "off"
+      },
+    "plugins": ["prettier"]
+}
