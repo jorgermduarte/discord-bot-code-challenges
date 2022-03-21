@@ -1,11 +1,3 @@
 {
-    // "editor.formatOnSave": true,
-    "editor.formatOnPaste": false,
-    "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "json.maxItemsComputed": 999999,
-  } 
+  
+}
