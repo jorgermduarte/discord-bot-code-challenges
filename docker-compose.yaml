@@ -1,0 +1,17 @@
+services:
+  bot:
+    build:
+      context: ./
+    command: npm start
+    env_file: ./.env
+    ports:
+      - $APP_PORT:$APP_PORT
+    stdin_open: true
+    tty: true
+    expose:
+      - $APP_PORT
+
+networks:
+  default:
+    external: true
+    name: nginx_production_default
