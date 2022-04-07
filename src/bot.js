@@ -9,7 +9,7 @@ const events = require('./events');
 
 module.exports = {
   initialize: () => {
-    client.login(process.env.discord_bot_token);
+    client.login(process.env.DISCORD_BOT_TOKEN);
   },
   setEvents: () => {
     // append bot events
